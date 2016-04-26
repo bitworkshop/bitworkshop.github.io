@@ -1,25 +1,23 @@
-markdown: redcarpet
-permalink: /:categories/:title.html
-url: 
-lsi: false
-pygments: true
-safe: true
-auto: false 
+title:            Scribble
+description:      A jekyll theme. Because I scribble.
+url:              # Site url, without a slash at the end.
+signoff:          # Your name.
+disqus_shortname: # disqus comment thread for post header options. ( leave blank if unwanted. )
+facebook_appid:   # appid for like button, remove from /_includes/share.html if unwanted.
+google_analytics: # set tracking, remove from /javascripts/basic.js if unwanted.
 
-paginate: 8
-paginate_path: "page:num"
-
-# presonal config
-title: Steven Pan's Blog
-description: Steven Pan's Blog, powered by Jekyll...
-feed: http://bitworkshop.github.io/atom.xml
-
-author: Polande Huang
-
-seo: 
-  keyword: 
-  description: 
-config:
-  js_dir:
-  img_dir:
-  css_dir:
+links:
+  - name:         About
+    url:          /about
+  - name:         Blog
+    url:          http://muan.co
+    external:     true
+  - name:         GitHub
+    url:          http://github.com/muan
+    external:     true
+highlighter:      pygments
+permalink:        pretty
+markdown:         redcarpet
+redcarpet:
+  extensions:
+    - smart

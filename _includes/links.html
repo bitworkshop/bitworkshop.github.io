@@ -1,13 +1,9 @@
-            <ul class="list-unstyled">
-              <li>
-                <a href="https://github.com/polandeme">
-                  GitHub
-                </a>
-              </li>
-              <li>
-                <a href="http://www.stuzone.com/">
-                  学生地带
-                </a>
-              </li>
-             
-            </ul>
+<div class="block">
+  {% for link in site.links %}
+    <a target="{% if link.external %}_blank{% else %}_top{% endif %}"
+       class="main" 
+       href="{% unless link.external %}{{ site.url }}{% endunless %}{{ link.url }}">
+       {{ link.name }}
+     </a>
+  {% endfor %}
+</div>
