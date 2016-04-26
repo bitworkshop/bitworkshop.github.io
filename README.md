@@ -1,57 +1,91 @@
-Scribble
-========
+## Indigo Minimalist Jekyll Template - [Demo](http://sergiokopplin.github.io/indigo/) · [![Build Status](https://travis-ci.org/sergiokopplin/indigo.svg?branch=gh-pages)](https://travis-ci.org/sergiokopplin/indigo)
 
-A Jekyll theme. [Want a demo? click and read instruction. :point_left:](http://scribble.muan.co/2013/05/06/scribble-the-jekyll-theme/)
-<br />
-[More themes](https://github.com/muan/muan.github.com/releases).
+<p align="center">This is a simple and minimalist template for Jekyll for those who likes to eat noodles.</p>
 
-![screenshot](https://cloud.githubusercontent.com/assets/1153134/11014801/12c7940a-853e-11e5-9f7b-87325c9bc695.png)
+***
 
-There is no clever design philosophy to talk about, I tried to find something to work with, and 'scribble' came to my mind.
+<p align="center">
+    <b><a href="README.md#what-has-inside">What has inside?</a></b>
+    |
+    <b><a href="README.md#setup">Setup?</a></b>
+    |
+    <b><a href="README.md#settings">Settings</a></b>
+    |
+    <b><a href="README.md#tests">Tests</a></b>
+    |
+    <b><a href="README.md#showcase">Showcase</a></b>
+    |
+    <b><a href="README.md#contributions">Contributions</a></b>
+    |
+    <b><a href="README.md#problems">Problems</a></b>
+    |
+    <b><a href="README.md#how-to">How to</a></b>
+    |
+    <b><a href="README.md#license">License</a></b>
+</p>
 
-This theme uses Open Sans powered by Google Web Fonts, and was written in plain HTML, SCSS & CoffeeScript, though .scss & .coffee files wouldn't be included in the theme.
+![Screenshot](https://raw.githubusercontent.com/sergiokopplin/indigo/gh-pages/screen-shot.png)
 
-The theme is mobile optimized but I did not check browser compatibility. It looks great in Chrome, Safari and Firefox though.
+## What has inside?
 
----
+- [Gulp](http://gulpjs.com/) && [BrowserSync](https://www.browsersync.io/)
+- [Stylus](http://stylus-lang.com/) with [RSCSS](http://rscss.io/) Methodology
+- [SVG](https://www.w3.org/Graphics/SVG/)
+- Tests with [Travis](https://travis-ci.org/)
+- No JS
+- Google Speed: [98/100](https://developers.google.com/speed/pagespeed/insights/?url=http%3A%2F%2Fsergiokopplin.github.io%2Findigo%2F)
 
-### Get started
+## Setup
 
-1. [Fork the repository](https://github.com/muan/scribble/fork).
-2. Clone the repository to your computer.<br /> `git clone https://github.com/username/scribble`
-3. `bundle install`
-4. **Using older versions of Jekyll**<br />
-  Build and run Jekyll using `jekyll --server --auto`.<br />
-  **Using [Jekyll 1.0](http://blog.parkermoore.de/2013/05/06/jekyll-1-dot-0-released/)**<br />
-  Build Jekyll using `jekyll build`.<br />
-  Then run Jekyll using `jekyll serve --watch`, go to http://localhost:4000 for your site.
+0. :star: to the project. :metal:
+1. [Install Jekyll](http://jekyllrb.com)
+2. [Install NodeJS](https://nodejs.org/)
+3. [Install Bundler](http://bundler.io/)
+4. Fork the project [Indigo](https://github.com/sergiokopplin/indigo/fork)
+5. Edit `_config.yml` with your data.
+6. `bundle install`
+7. `npm install`
+8. `npm install -g gulp`
+9. `gulp`
+10. open in your browser: `http://localhost:3000`
 
----
+> [Arti Annaswamy](https://github.com/aannasw) wrote a really nice tutorial of "how to install jekyll". Here's the [part 1](http://artiannaswamy.com/build-a-github-blog-part-1) and [part 2](http://artiannaswamy.com/build-a-github-blog-part-2). :metal:
 
-### Make it yours
+## Settings
 
-1. I have extracted most user specific information to `_config.yml`, you should be able to set up almost everything from it.
-2. Change about.md for blog intro.
-3. For domain settings, see [the guide from GitHub](https://help.github.com/articles/setting-up-a-custom-domain-with-pages).
+You must fill some informations on `_config.yml` to customize your site.
 
----
+```
+name: John Doe
+bio: 'A Man who travels the world eating noodles'
+picture: 'assets/images/profile.jpg'
+...
 
-### Options
+and lot of other options, like width, projects, pages, read-time, tags, relateds, animations, etc.
+```
 
-When writing a post, there are 3 options you can add to the header.
+## How to:
 
-1. **disqus: y**<br />
-  If disqus is set to 'y', at the end of the post there will be a disqus thread, just like this one. To use disqus, you MUST [set up your own disqus account](http://disqus.com/).
+- [Emojis in the projects list?](https://github.com/sergiokopplin/indigo/issues/72)
+- [Nokogiri dependencie problems?](https://github.com/sergiokopplin/indigo/issues/81)
+- [Syncing a Fork](https://help.github.com/articles/syncing-a-fork/)
+- [Tests with Travis CI - Tutorial](http://www.raywenderlich.com/109418/travis-ci-tutorial)
 
-2. **share: y**<br />
-  An option for showing tweet and like button under a post.
+## Tests
 
-3. **date**: 2013-05-06 18:07:17<br />
-  Date is not a required header since Jekyll reads the file name for date, this was added in only for the **signoff time**. (as shown at the end of this post) If you don't want the signoff time, go into `/includes/signoff.html` remove the `<span>`, and remove `{% include signoff.html %}` from `/layouts/post.html`.
+You can test your app with:
 
----
+```bash
+bundle exec htmlproof ./_site
+````
 
-### The end
+## Problems?
 
-Like it? [Tell me](http://twitter.com/muanchiou).<br/>
-Question? [Use GitHub Issues](https://github.com/muan/scribble/issues).
+Tell me on github or open a [issue](https://github.com/sergiokopplin/indigo/issues/new).
+
+## Inspirations:
+- [Addy Osmani](https://addyosmani.com/)
+
+## License
+
+[MIT](http://kopplin.mit-license.org/) License © Sérgio Kopplin

@@ -1,10 +1,47 @@
 ---
-layout: page
 title: About
+layout: page
+permalink: /about/index.html
 ---
+![Profile Image]({{ site.url }}/{{ site.picture }})
 
-Give people something to read and get to know you. Here's my attempt: this is [Mu-An](http://muan.co), a designer developer who lives in London at the moment.
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
-Tweet at [@muanchiou](http://twitter.com/muanchiou), read my code on [GitHub](http://github.com/muan), see my designs on [Dribbble](http://dribbble.com/muan), find my CV on [LinkedIn](http://uk.linkedin.com/in/muanchiou).
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
-This theme is made by me. You have a nice day. ♥
+<h2>Skills</h2>
+
+<ul class="skill-list">
+	<li>HTML - Jade - Haml - Erb</li>
+	<li>Responsive (Mobile First)</li>
+	<li>CSS (Stylus, Sass, Less)</li>
+	<li>Css Frameworks (Bootstrap, Foundation)</li>
+	<li>Javascript (Design Patterns, Testes)</li>
+	<li>NodeJS</li>
+	<li>AngularJS - ReactJS</li>
+	<li>Grunt - Gulp - Yeoman</li>
+	<li>Git</li>
+	<li>PHP</li>
+	<li>Python</li>
+	<li>MySQL - MongoDB</li>
+	<li>Scrum and Kanban</li>
+	<li>TDD e Continuous Integration</li>
+</ul>
+
+<h2>Projects</h2>
+
+<ul>
+	<li><a href="https://github.com/">Lorem Lorem</a></li>
+	<li><a href="https://github.com/">Ipsum Dolor</a></li>
+	<li><a href="https://github.com/">Dolor Lorem</a></li>
+</ul>
